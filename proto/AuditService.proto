@@ -1,17 +1,16 @@
-syntax="proto3"
-package=com.xebia.inno.grpc
+syntax = "proto3";
+package com.xebia.inno.grpc;
 
 message ChatMessage {
-	string chat = 1;
-	string sender = 2;
-	string message = 3;
+    string chat = 1;
+    string sender = 2;
+    string message = 3;
 }
 
-
 message ChatStory {
-	string chat = 1;
-	repeated string story = 2;
-	repeated string members = 3;
+    string chat = 1;
+    repeated string story = 2;
+    repeated string members = 3;
 }
 
 service ChatAuditService {
