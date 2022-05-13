@@ -22,3 +22,6 @@ target
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+AuditService_pb2.py
+AuditService_pb2_grpc.py

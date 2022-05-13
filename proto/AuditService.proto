@@ -16,3 +16,7 @@ message ChatStory {
 service ChatAuditService {
 	rpc message(ChatMessage) returns (ChatStory);
 }
+
+service StreamChatAuditService {
+    rpc message(ChatMessage) returns (stream ChatStory);
+}
