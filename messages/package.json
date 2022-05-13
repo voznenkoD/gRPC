@@ -1,0 +1,9 @@
+{
+  "dependencies": {},
+  "scripts": {
+    "gen_client": "./gen_client.sh"
+  },
+  "devDependencies": {
+    "grpc_tools_node_protoc_ts": "^5.3.2"
+  }
+}
