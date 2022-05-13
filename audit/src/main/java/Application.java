@@ -5,7 +5,8 @@ import java.io.IOException;
 public class Application {
   public static void main(String[] args) {
       AuditServiceImpl auditService = new AuditServiceImpl();
-      Server auditServer = ServerBuilder.forPort(9080).addService(auditService).build();
+      StreamAuditServiceImpl streamAuditService = new StreamAuditServiceImpl();
+      Server auditServer = ServerBuilder.forPort(9080).addService(auditService).addService(streamAuditService).build();
       try {
           auditServer.start();
           System.out.println("=== Lock and load ===");
