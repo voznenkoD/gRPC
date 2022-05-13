@@ -1,0 +1,9 @@
+{
+  "name": "grcp",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./generated/index.ts",
+  "dependencies": {
+    "ts-protoc-gen": "^0.15.0"
+  }
+}

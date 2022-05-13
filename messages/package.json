@@ -1,5 +1,7 @@
 {
-  "dependencies": {},
+  "dependencies": {
+    "ts-protoc-gen": "^0.15.0"
+  },
   "scripts": {
     "gen_client": "./gen_client.sh"
   },
