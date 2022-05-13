@@ -1,18 +1,15 @@
 import "./App.css";
 import Header from "./components/Header";
-
+import { AuditService } from "grcp";
 // import { User } from "./chat_pb";
-import { User } from "./mocks/user";
-
 //import { ChatServiceClient } from "./chat_grpc_web_pb";
 import ChatPage from "./pages/ChatPage";
 import { useState, useRef } from "react";
 
-// export const client = new ChatServiceClient(
-//   "http://localhost:8080",
-//   null,
-//   null
-// );
+export const client = new AuditService.ChatAuditServiceClient(
+  "http://localhost:9080",
+  null
+);
 
 export default function App() {
   const inputRef = useRef<any>(null);
@@ -20,9 +17,9 @@ export default function App() {
   function joinHandler() {
     const _username = inputRef?.current?.value;
 
-    const user = new User();
-    user.setId(Date.now());
-    user.setName(_username);
+    // const user = new User();
+    // user.setId(Date.now());
+    // user.setName(_username);
 
     // client.join(user, null, (err, response) => {
     //   if (err) return console.log(err);
