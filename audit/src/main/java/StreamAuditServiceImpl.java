@@ -5,7 +5,7 @@ import io.grpc.stub.StreamObserver;
 public class StreamAuditServiceImpl extends StreamChatAuditServiceGrpc.StreamChatAuditServiceImplBase {
 
     @Override
-    public void message(AuditService.ChatMessage request, StreamObserver<AuditService.ChatStory> responseObserver) {
+    public void streaming(AuditService.ChatMessage request, StreamObserver<AuditService.ChatStory> responseObserver) {
         printTheMessage(request);
 
         for (int i = 0; i < 10000; i++) {
