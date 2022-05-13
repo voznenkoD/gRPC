@@ -1,4 +1,9 @@
 yarn add ts-protoc-gen --save-dev
+rm -rd './generated'
+mkdir './generated' 
+echo 'import AuditService from "./AuditService_pb_service";
+import Audit from "./AuditService_pb_service";
+export { AuditService, Audit };' > ./generated/index.ts
 
 # Path to this plugin
 PROTOC_GEN_TS_PATH="./node_modules/.bin/protoc-gen-ts"
