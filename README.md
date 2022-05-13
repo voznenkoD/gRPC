@@ -19,5 +19,6 @@ yarn start
 ### Generate proto client
 ```sh
 # from root
-./proto/gen_client.sh
+cd proto 
+./gen_client.sh
 ```
