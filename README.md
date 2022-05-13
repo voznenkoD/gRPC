@@ -22,3 +22,15 @@ yarn start
 cd proto 
 ./gen_client.sh
 ```
+
+
+### Python client in multimedia folder
+#### Prerequesites
+```sh
+python3 -m pip install grpcio
+python3 -m pip install grpcio-tools
+```
+To run it please use:
+```sh
+multimedia.sh
+```
